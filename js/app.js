@@ -76,7 +76,7 @@ function inicarApp(){
             recetaHeading.textContent = strMeal ?? receta.title;
 
             const recetaButton = document.createElement('BUTTON');
-            recetaButton.classList.add('btn', 'btn-danger', 'w-100');
+            recetaButton.classList.add('btn', 'btn-success', 'w-100');
             recetaButton.textContent ='Ver Receta';
          
             recetaButton.onclick = function(){
@@ -152,7 +152,7 @@ function inicarApp(){
 
         // botones de cerrar y favorito
         const btnFavorito = document.createElement('BUTTON');
-        btnFavorito.classList.add('btn', 'btn-danger', 'col');
+        btnFavorito.classList.add('btn', 'btn-success', 'col');
         btnFavorito.textContent = existeStorage(idMeal) ? 'Eliminar Favorito' : 'Guardar Favorito';
 
         //  en localStorage
